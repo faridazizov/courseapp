@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // Favicon
+    link(href='images/apple-icon.png', rel='icon', type='image/png')
+    link(href='images/favicon.png', rel='shortcut icon', type='image/png')
+    // Efinance Title
+    title Education Park - HTML 5 Template
+    // css file
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    // Responsive stylesheet
+    link(rel='stylesheet', href='css/responsive.css')
+    block styles
+    
+  body
+    .preloader
+    include user-includes/header.pug
+    include user-includes/slider.pug
+    include user-includes/content.pug
+    include user-includes/footer.pug
+
+
+    script(type='text/javascript', src='js/jquery.js')
+    script(type='text/javascript', src='js/bootstrap.min.js')
+    script(type='text/javascript', src='js/bootstrap-dropdownhover.min.js')
+    script(type='text/javascript', src='js/jquery-ui.js')
+    script(type='text/javascript', src='js/jquery-scrolltofixed-min.js')
+    script(type='text/javascript', src='js/isotope.js')
+    script(type='text/javascript', src='js/stellar.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.min.js')
+    script(type='text/javascript', src='js/jquery.masonry.min.js')
+    script(type='text/javascript', src='js/css3-animate-it.js')
+    script(type='text/javascript', src='js/bootstrap-slider.js')
+    script(type='text/javascript', src='js/jquery.scrollUp.js')
+    script(type='text/javascript', src='js/classie.js')
+    block scripts
+    // Custom script for all pages
+    script(type='text/javascript', src='js/script.js')
+    // Funfact START
+    script(type='text/javascript').
+      $(document).ready(function($) {
+      $('.start-count').each(function() {
+      var $this = $(this);
+      $this.data('target', parseInt($this.html()));
+      $this.data('counted', false);
+      $this.html('0');
+      });
+      $(window).bind('scroll', function() {
+      var speed = 3000;
+      $('.start-count').each(function() {
+      var $this = $(this);
+      if (!$this.data('counted') && $(window).scrollTop() + $(window).height() >= $this.offset().top) {
+      $this.data('counted', true);
+      $this.animate({
+      dummy: 1
+      }, {
+      duration: speed,
+      step: function(now) {
+      var $this = $(this);
+      var val = Math.round($this.data('target') * now);
+      $this.html(val);
+      if (0 < $this.parent('.value').length) {
+      $this.parent('.value').css('width', val + '%');
+      }
+      }
+      });
+      }
+      });
+      }).triggerHandler('scroll');
+      });
+    

@@ -1,0 +1,193 @@
+nav.be-right-sidebar
+        .sb-content
+          .tab-navigation
+            ul.nav.nav-tabs.nav-justified(role='tablist')
+              li.nav-item(role='presentation')
+                a.nav-link.active(href='#tab1', aria-controls='tab1', role='tab', data-toggle='tab') Chat
+              li.nav-item(role='presentation')
+                a.nav-link(href='#tab2', aria-controls='tab2', role='tab', data-toggle='tab') Todo
+              li.nav-item(role='presentation')
+                a.nav-link(href='#tab3', aria-controls='tab3', role='tab', data-toggle='tab') Settings
+          .tab-panel
+            .tab-content
+              #tab1.tab-pane.tab-chat.active(role='tabpanel')
+                .chat-contacts
+                  .chat-sections
+                    .be-scroller
+                      .content
+                        h2 Recent
+                        .contact-list.contact-list-recent
+                          .user
+                            a(href='#')
+                              img(src='/admin/img/avatar1.png', alt='Avatar')
+                              .user-data
+                                span.status.away
+                                span.name Claire Sassu
+                                span.message Can you share the...
+                          .user
+                            a(href='#')
+                              img(src='/admin/img/avatar2.png', alt='Avatar')
+                              .user-data
+                                span.status
+                                span.name Maggie jackson
+                                span.message I confirmed the info.
+                          .user
+                            a(href='#')
+                              img(src='/admin/img/avatar3.png', alt='Avatar')
+                              .user-data
+                                span.status.offline
+                                span.name Joel King		
+                                span.message Ready for the meeti...
+                        h2 Contacts
+                        .contact-list
+                          .user
+                            a(href='#')
+                              img(src='/admin/img/avatar4.png', alt='Avatar')
+                              .user-data2
+                                span.status
+                                span.name Mike Bolthort
+                          .user
+                            a(href='#')
+                              img(src='/admin/img/avatar5.png', alt='Avatar')
+                              .user-data2
+                                span.status
+                                span.name Maggie jackson
+                          .user
+                            a(href='#')
+                              img(src='/admin/img/avatar6.png', alt='Avatar')
+                              .user-data2
+                                span.status.offline
+                                span.name Jhon Voltemar
+                  .bottom-input
+                    input(type='text', placeholder='Search...', name='q')
+                    span.mdi.mdi-search
+                .chat-window
+                  .title
+                    .user
+                      img(src='/admin/img/avatar2.png', alt='Avatar')
+                      h2 Maggie jackson
+                      span Active 1h ago
+                    span.icon.return.mdi.mdi-chevron-left
+                  .chat-messages
+                    .be-scroller
+                      .content
+                        ul
+                          li.friend
+                            .msg Hello
+                          li.self
+                            .msg Hi, how are you?
+                          li.friend
+                            .msg Good, I'll need support with my pc
+                          li.self
+                            .msg Sure, just tell me what is going on with your computer?
+                          li.friend
+                            .msg I don't know it just turns off suddenly
+                  .chat-input
+                    .input-wrapper
+                      span.photo.mdi.mdi-camera
+                      input(type='text', placeholder='Message...', name='q', autocomplete='off')
+                      span.send-msg.mdi.mdi-mail-send
+              #tab2.tab-pane.tab-todo(role='tabpanel')
+                .todo-container
+                  .todo-wrapper
+                    .be-scroller
+                      .todo-content
+                        span.category-title Today
+                        ul.todo-list
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox', checked='')
+                              span.custom-control-label Initialize the project
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox')
+                              span.custom-control-label Create the main structure							
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox')
+                              span.custom-control-label Updates changes to GitHub							
+                        span.category-title Tomorrow
+                        ul.todo-list
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox')
+                              span.custom-control-label Initialize the project							
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox')
+                              span.custom-control-label Create the main structure							
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox')
+                              span.custom-control-label Updates changes to GitHub							
+                          li
+                            label.custom-checkbox.custom-control.custom-control-sm
+                              span.delete.mdi.mdi-delete
+                              input.custom-control-input(type='checkbox')
+                              span.custom-control-label(title='This task is too long to be displayed in a normal space!') This task is too long to be displayed in a normal space!							
+                  .bottom-input
+                    input(type='text', placeholder='Create new task...', name='q')
+                    span.mdi.mdi-plus
+              #tab3.tab-pane.tab-settings(role='tabpanel')
+                .settings-wrapper
+                  .be-scroller
+                    span.category-title General
+                    ul.settings-list
+                      li
+                        .switch-button.switch-button-sm
+                          input#st1(type='checkbox', checked='', name='st1')
+                          span
+                            label(for='st1')
+                        span.name Available
+                      li
+                        .switch-button.switch-button-sm
+                          input#st2(type='checkbox', checked='', name='st2')
+                          span
+                            label(for='st2')
+                        span.name Enable notifications
+                      li
+                        .switch-button.switch-button-sm
+                          input#st3(type='checkbox', checked='', name='st3')
+                          span
+                            label(for='st3')
+                        span.name Login with Facebook
+                    span.category-title Notifications
+                    ul.settings-list
+                      li
+                        .switch-button.switch-button-sm
+                          input#st4(type='checkbox', name='st4')
+                          span
+                            label(for='st4')
+                        span.name Email notifications
+                      li
+                        .switch-button.switch-button-sm
+                          input#st5(type='checkbox', checked='', name='st5')
+                          span
+                            label(for='st5')
+                        span.name Project updates
+                      li
+                        .switch-button.switch-button-sm
+                          input#st6(type='checkbox', checked='', name='st6')
+                          span
+                            label(for='st6')
+                        span.name New comments
+                      li
+                        .switch-button.switch-button-sm
+                          input#st7(type='checkbox', name='st7')
+                          span
+                            label(for='st7')
+                        span.name Chat messages
+                    span.category-title Workflow
+                    ul.settings-list
+                      li
+                        .switch-button.switch-button-sm
+                          input#st8(type='checkbox', name='st8')
+                          span
+                            label(for='st8')
+                        span.name Deploy on commit

@@ -1,0 +1,30 @@
+{
+  "name": "courseapp",
+  "version": "1.0.0",
+  "description": "this is course web app with expressjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faridazizov/courseapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faridazizov/courseapp/issues"
+  },
+  "homepage": "https://github.com/faridazizov/courseapp#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "pug": "^3.0.0",
+    "sequelize": "^5.21.13"
+  }
+}

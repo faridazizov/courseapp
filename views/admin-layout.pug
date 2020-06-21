@@ -1,0 +1,37 @@
+doctype html
+html(lang='en')
+    head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='description', content='')
+      meta(name='author', content='')
+      link(rel='shortcut icon', href='/admin/img/logo-fav.png')
+      title Beagle
+      link(rel='stylesheet', type='text/css', href='/admin/lib/perfect-scrollbar/css/perfect-scrollbar.min.css')
+      link(rel='stylesheet', type='text/css', href='/admin/lib/material-design-icons/css/material-design-iconic-font.min.css')
+      block styles
+      //if lt IE 9
+        script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+        script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+      link(rel='stylesheet', href='/admin/css/app.css', type='text/css')
+    body
+      .be-wrapper
+        include admin-includes/nav.pug
+        include admin-includes/left-sidebar.pug
+        include admin-includes/content.pug
+        include admin-includes/right-sidebar.pug
+      script(src='/admin/lib/jquery/jquery.min.js', type='text/javascript')
+      script(src='/admin/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js', type='text/javascript')
+      script(src='/admin/lib/bootstrap/dist/js/bootstrap.bundle.min.js', type='text/javascript')
+      script(src='/admin/js/app.js', type='text/javascript')
+      script(src='/admin/lib/prettify/prettify.js', type='text/javascript')
+      block scripts
+      script(type='text/javascript').
+        $(document).ready(function(){
+        //initialize the javascript
+        App.init();
+        //Runs prettify
+        prettyPrint();
+        });
+    

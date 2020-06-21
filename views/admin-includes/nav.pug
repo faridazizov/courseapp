@@ -1,0 +1,118 @@
+nav.navbar.navbar-expand.fixed-top.be-top-header
+        .container-fluid
+          .be-navbar-header
+            a.navbar-brand(href='#')
+          .be-right-navbar.be-right-navbar-flex
+            .search-container
+              .input-group.input-group-sm
+                input.form-control.search-input(type='text', name='search', placeholder='Search...')
+                span.input-group-btn
+                  button.btn.btn-primary(type='button') Search
+            ul.nav.navbar-nav.float-right.be-user-nav
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                  img(src='/admin/img/avatar.png', alt='Avatar')
+                  span.user-name Túpac Amaru
+                .dropdown-menu(role='menu')
+                  .user-info
+                    .user-name Túpac Amaru
+                    .user-position.online Available
+                  a.dropdown-item(href='#')
+                    span.icon.mdi.mdi-face
+                    |  Account
+                  a.dropdown-item(href='#')
+                    span.icon.mdi.mdi-settings
+                    |  Settings
+                  a.dropdown-item(href='#')
+                    span.icon.mdi.mdi-power
+                    |  Logout
+            ul.nav.navbar-nav.float-right.be-icons-nav
+              li.nav-item.dropdown
+                a.nav-link.be-toggle-right-sidebar(href='#', role='button', aria-expanded='false')
+                  span.icon.mdi.mdi-settings
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                  span.icon.mdi.mdi-notifications
+                  span.indicator
+                ul.dropdown-menu.be-notifications
+                  li
+                    .title
+                      | Notifications
+                      span.badge.badge-pill 3
+                    .list
+                      .be-scroller
+                        .content
+                          ul
+                            li.notification.notification-unread
+                              a(href='#')
+                                .image
+                                  img(src='/admin/img/avatar2.png', alt='Avatar')
+                                .notification-info
+                                  .text
+                                    span.user-name Jessica Caruso
+                                    |  accepted your invitation to join the team.
+                                  span.date 2 min ago
+                            li.notification
+                              a(href='#')
+                                .image
+                                  img(src='/admin/img/avatar3.png', alt='Avatar')
+                                .notification-info
+                                  .text
+                                    span.user-name Joel King
+                                    |  is now following you
+                                  span.date 2 days ago
+                            li.notification
+                              a(href='#')
+                                .image
+                                  img(src='/admin/img/avatar4.png', alt='Avatar')
+                                .notification-info
+                                  .text
+                                    span.user-name John Doe
+                                    |  is watching your main repository
+                                  span.date 2 days ago
+                            li.notification
+                              a(href='#')
+                                .image
+                                  img(src='/admin/img/avatar5.png', alt='Avatar')
+                                .notification-info
+                                  span.text
+                                    span.user-name Emily Carter
+                                    |  is now following you
+                                  span.date 5 days ago
+                    .footer
+                      a(href='#') View all notifications
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                  span.icon.mdi.mdi-apps
+                ul.dropdown-menu.be-connections
+                  li
+                    .list
+                      .content
+                        .row
+                          .col
+                            a.connection-item(href='#')
+                              img(src='/admin/img/github.png', alt='Github')
+                              span GitHub
+                          .col
+                            a.connection-item(href='#')
+                              img(src='/admin/img/bitbucket.png', alt='Bitbucket')
+                              span Bitbucket
+                          .col
+                            a.connection-item(href='#')
+                              img(src='/admin/img/slack.png', alt='Slack')
+                              span Slack
+                        .row
+                          .col
+                            a.connection-item(href='#')
+                              img(src='/admin/img/dribbble.png', alt='Dribbble')
+                              span Dribbble
+                          .col
+                            a.connection-item(href='#')
+                              img(src='/admin/img/mail_chimp.png', alt='Mail Chimp')
+                              span Mail Chimp
+                          .col
+                            a.connection-item(href='#')
+                              img(src='/admin/img/dropbox.png', alt='Dropbox')
+                              span Dropbox
+                    .footer
+                      a(href='#') More
